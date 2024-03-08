@@ -209,24 +209,24 @@ namespace Exercicios_TI20N
 
             string primos = "2 3 5";
 
-                for(int i = 2; i <= 20; i++)
+            for (int i = 2; i <= 20; i++)
+            {
+                if (i % 2 != 0 && i % 3 != 0 && i % 5 != 0)
                 {
-                    if(i % 2 != 0 && i % 3 != 0 && i % 5 != 0)
-                    {
 
-                        primos += " " + i;
-                    
-                    }
-                
-                
-                }// Fim do For
-                return primos;
+                    primos += " " + i;
+
+                }
+
+
+            }// Fim do For
+            return primos;
 
         }//Fim do Dez
 
         //Exercício 11: Faça um programa que peça ao usuário um
         // número e verifique se é primo
-        public string ExercicioOnze(int num) 
+        public string ExercicioOnze(int num)
         {
 
 
@@ -243,14 +243,14 @@ namespace Exercicios_TI20N
 
 
             }
-            else 
+            else
             {
 
                 return "Não Primo!";
-            
+
             }//Fim do IF
- 
-        
+
+
         }//Fim do Onze
 
 
@@ -259,18 +259,138 @@ namespace Exercicios_TI20N
         {
 
             int fatorial = 1;
-            for (int i = num; i >= 1; i--) 
-            { 
-            
-                fatorial*= i;
-            
+            for (int i = num; i >= 1; i--)
+            {
+
+                fatorial *= i;
+
             }//Fim do For
 
             return fatorial;
 
 
 
-        }    
+        }// Fim do Doze
+
+        //Exercício 13: Faça um programa que imprima uma sequencia de Fibonacci
+        //até o décimo termo
+        public string ExercícioTreze()
+        {
+
+            string resultado = "0 1";
+
+            int fib1 = 0;
+            int fib2 = 1;
+            int fib3 = 0;
+
+            for (int i = 1; i <= 8; i++)
+            {
+
+                
+                fib3 = fib1 + fib2;
+                resultado += " " + fib3;
+                fib1 = fib2;
+                fib2 = fib3;
+
+
+            }// Fim do For
+
+            return resultado;
+
+        }//Fim do Treze
+
+        //Exercício 14: Faça um programa que peça ao usuário
+        // um número e imprima se é número de Fibonacci
+
+        public string ExercícioQuatorze(int num) 
+        {
+
+            string resultado = "0 1";
+
+            int fib1 = 0;
+            int fib2 = 1;
+            int fib3 = 0;
+
+            for (int i = 1; i <= num-2; i++)
+            {
+
+
+                fib3 = fib1 + fib2;
+                resultado += " " + fib3;
+                fib1 = fib2;
+                fib2 = fib3;
+
+
+            }// Fim do For
+
+            return resultado;
+
+
+        }// Fim do Quatorze
+
+
+        // Exercício 15: Faça um programa que peça ao usuário um
+        // número e calcule a soma dos seus dígitos.
+        public int ExercícioQuinze(int num)
+        {
+
+            string resultado = "" + num; //Convertendo número para texto
+            int tamanho = resultado.Length; //Retorna o tamanho do texto
+            int soma = 0;
+
+            for (int i = 0; i < tamanho; i++ ) 
+            { 
+            
+                soma += Convert.ToInt32(resultado.Substring(i, 1));
+            
+            }// Fim do For
+            
+            return soma;
+            
+        }// Fim do Quinze
+
+
+
+
+
+        // Exercício 16: Faça um programa que peça ao usuário um número
+        // e imprima os números pares e impares de 1 até esse número.
+        public string ExercícioDezesseis(int num)
+        {
+
+            string par = "";
+            string impar = "";
+
+            for (int i = 1; i <= num; i++ ) 
+            {
+
+                if (i % 2 == 0)
+                {
+
+
+                    par += "" + i;
+
+
+                }
+                else 
+                {
+
+                    impar += "" + i;
+                
+         
+                }
+            
+            
+            }
+
+            return "pares " + par + "\nImpares: " + impar;
+
+
+        }
+
+
+
+
     }//Fim da Classe
 
 

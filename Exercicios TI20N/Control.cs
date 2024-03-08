@@ -36,7 +36,11 @@ namespace Exercicios_TI20N
                                     "9. Exercício 09\n" +
                                     "10. Exercício 10\n"+
                                     "11. Exercício 11\n"+
-                                    "12. Exercício 12\n");
+                                    "12. Exercício 12\n"+
+                                    "13. Exercício 13\n"+
+                                    "14. Exercício 14\n"+
+                                    "15. Exercício 15\n"+
+                                    "16. Exercício 16\n");
                                            
                                                  
                                         
@@ -116,6 +120,33 @@ namespace Exercicios_TI20N
                         num= Convert.ToInt32(Console.ReadLine());
 
                         Console.WriteLine(modelo.ExercícioDoze(num));
+                        break;
+
+                    case 13:
+                        Console.WriteLine("Informe um número");
+                        num = Convert.ToInt32(Console.ReadLine());
+                        
+                        Console.WriteLine(modelo.ExercícioTreze());
+                        break;
+
+                    case 14:
+                        Console.Write("Informe um número: ");
+                        num = Convert.ToInt32(Console.ReadLine());
+
+                        Console.WriteLine(modelo.ExercícioQuatorze(num));
+                        break;
+                        
+                    case 15:
+                        Console.WriteLine("Informe um número: ");
+                        num = Convert.ToInt32(Console.ReadLine());
+
+                        Console.WriteLine(modelo.ExercícioQuinze(num));
+                        break;
+                    case 16:
+                        Console.WriteLine("Informe um número: ");
+                        num = Convert.ToInt32(Console.ReadLine());
+
+                        Console.WriteLine(modelo.ExercícioDezesseis(num));
                         break;
 
                     default:
