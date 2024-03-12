@@ -40,7 +40,16 @@ namespace Exercicios_TI20N
                                     "13. Exercício 13\n"+
                                     "14. Exercício 14\n"+
                                     "15. Exercício 15\n"+
-                                    "16. Exercício 16\n");
+                                    "16. Exercício 16\n"+
+                                    "17. Exercício 17\n"+
+                                    "18. Exercício 18\n"+
+                                    "19. Exercício 19\n"+
+                                    "20. Exercício 20\n"+
+                                    "21. Exercício 21\n"+
+                                    "22. Exercício 22\n"+
+                                    "23. Exercício 23\n"+
+                                    "24. Exercício 24\n"+
+                                    "25. Exercício 25\n");
                                            
                                                  
                                         
@@ -148,10 +157,77 @@ namespace Exercicios_TI20N
 
                         Console.WriteLine(modelo.ExercícioDezesseis(num));
                         break;
+                    case 17:
+                        Console.WriteLine("Informe um número: ");
+                        num = Convert.ToInt32(Console.ReadLine());
+
+                        Console.WriteLine(modelo.ExercícioDezessete(num));
+                        break;
+                    case 18:
+                        Console.WriteLine("Informe um número: ");
+                        double num1 = Convert.ToInt32(Console.ReadLine());
+
+                        Console.WriteLine("Informe um número: ");
+                        double num2 = Convert.ToInt32(Console.ReadLine());
+
+                        Console.WriteLine(modelo.ExercícioDezoito(num1,num2));
+                        break;
+                    case 19:
+                        Console.WriteLine("Informe um número: ");
+                        double fahrenheit = Convert.ToInt32(Console.ReadLine());
+
+                        Console.WriteLine(modelo.ExercícioDezenove(fahrenheit));
+                        break;
+                    case 20:
+                        Console.WriteLine("Informe um número: ");
+                        double raio = Convert.ToInt32(Console.ReadLine());
+
+                        Console.WriteLine(modelo.ExercícioVinte(raio));
+                        break;
+                    case 21:
+                        Console.WriteLine("Informe um Número: ");
+                        double quadrado = Convert.ToInt32(Console.ReadLine());
+
+                        Console.WriteLine(modelo.ExercícioVinteUm(quadrado));
+                        break;
+                    case 22:
+                        Console.WriteLine("Informe um número: ");
+                        int nun1 = Convert.ToInt32(Console.ReadLine());
+
+                        Console.WriteLine("Informe o Segundo Número: ");
+                        int nun2 = Convert.ToInt32(Console.ReadLine());
+
+                        Console.WriteLine(modelo.ExercícioVinteDois(nun1, nun2));
+                        break;
+                    case 23:
+                        Console.WriteLine("Informe um número: ");
+                        int primeiro = Convert.ToInt32(Console.ReadLine());
+
+                        Console.WriteLine("Informe o Segundo Número: ");
+                        int segundo = Convert.ToInt32(Console.ReadLine());
+
+                        Console.WriteLine(modelo.ExercícioVinteTres(primeiro, segundo));
+                        break;
+                    case 24:
+                        Console.WriteLine("Informe um número: ");
+                        int maior = Convert.ToInt32(Console.ReadLine());
+
+                        Console.WriteLine(modelo.ExercícioVinteQuatro(maior));
+                        break;
+                    case 25:
+                        Console.WriteLine("Informe um número: ");
+                        int nus1 = Convert.ToInt32(Console.ReadLine());
+
+                        Console.WriteLine("Informe o Segundo Número: ");
+                        int nus2 = Convert.ToInt32(Console.ReadLine());
+
+                        Console.WriteLine(modelo.ExercícioVinteDois(nus1, nus2));
+                        break;
+
 
                     default:
                         Console.WriteLine("Código digitado não é válido!");
-                        break;
+                        break;       
 
                 }// Fim do Método
 

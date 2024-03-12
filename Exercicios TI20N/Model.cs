@@ -286,7 +286,7 @@ namespace Exercicios_TI20N
             for (int i = 1; i <= 8; i++)
             {
 
-                
+
                 fib3 = fib1 + fib2;
                 resultado += " " + fib3;
                 fib1 = fib2;
@@ -302,7 +302,7 @@ namespace Exercicios_TI20N
         //Exercício 14: Faça um programa que peça ao usuário
         // um número e imprima se é número de Fibonacci
 
-        public string ExercícioQuatorze(int num) 
+        public string ExercícioQuatorze(int num)
         {
 
             string resultado = "0 1";
@@ -311,7 +311,7 @@ namespace Exercicios_TI20N
             int fib2 = 1;
             int fib3 = 0;
 
-            for (int i = 1; i <= num-2; i++)
+            for (int i = 1; i <= num - 2; i++)
             {
 
 
@@ -338,15 +338,15 @@ namespace Exercicios_TI20N
             int tamanho = resultado.Length; //Retorna o tamanho do texto
             int soma = 0;
 
-            for (int i = 0; i < tamanho; i++ ) 
-            { 
-            
+            for (int i = 0; i < tamanho; i++)
+            {
+
                 soma += Convert.ToInt32(resultado.Substring(i, 1));
-            
+
             }// Fim do For
-            
+
             return soma;
-            
+
         }// Fim do Quinze
 
 
@@ -361,7 +361,7 @@ namespace Exercicios_TI20N
             string par = "";
             string impar = "";
 
-            for (int i = 1; i <= num; i++ ) 
+            for (int i = 1; i <= num; i++)
             {
 
                 if (i % 2 == 0)
@@ -372,22 +372,173 @@ namespace Exercicios_TI20N
 
 
                 }
-                else 
+                else
                 {
 
                     impar += "" + i;
-                
-         
-                }
-            
-            
-            }
+
+
+                }// Fim do if
+
+
+            }// Fim do For
 
             return "pares " + par + "\nImpares: " + impar;
 
 
-        }
+        }// Fim do Dezesseis
 
+        //Exercício 17: Faça um programa que peça ao usuário um número
+        // e imprima o dobro desse número
+
+        public int ExercícioDezessete(int num)
+        {
+
+            int resultado = 0;
+
+            resultado = num * 2;
+
+
+            return resultado;
+
+        }//Fim do Dezessete
+
+        //Exercício 18: Faça um programa que peça ao usuário dois números
+        // e imprima a média deles.
+        public double ExercícioDezoito(double num1, double num2)
+        {
+
+            double resultado = 0;
+
+            resultado = num1 + num2 / 2;
+
+
+
+            return resultado;
+
+        }// Fim do Dezoito
+
+        //Exercício 19: Faça um programa que converta a
+        // temperatura de Celsius para Fahrenheit. A fórmula é F = C * 9/5 + 32
+        public double ExercícioDezenove(double celsius)
+        {
+
+            double fahrenheit = 0;
+
+            fahrenheit = celsius * 9 / 5 + 32;
+
+            return fahrenheit;
+
+        }// Fim do Dezenove
+
+        //Exercício 20: Faça um programa que peça o raio de um círculo e imprima a área.
+        // A fórmula é A = pi * raio^2.
+        public double ExercícioVinte(double raio) 
+        { 
+        
+            return Math.PI* Math.Pow(raio, 2);
+        
+        }//Fim do Vinte
+
+        //ExercícioVinteUm 21: Faça um programa que peça um número e imprima o seu quadrado
+        public double ExercícioVinteUm (double num) 
+        { 
+        
+            return num * 2;
+  
+        
+        
+        }//Fim do Vinte e Um
+
+        //Exercício 22: Faça um programa que peça dois números e imprima o maior deles.
+        public int ExercícioVinteDois(int nun1, int nun2) 
+        {
+
+            if (nun1 > nun2)
+            {
+
+                return nun1;
+
+
+            }
+            else 
+            {
+
+                return nun2;
+            
+            }// Fim do If
+        
+        
+        
+        }//Fim do Vinte e Dois
+
+        //Exercício 23: Faça um programa que peça dois números e imprima "São Iguais" se
+        //os números forem iguais ou
+        //imprima "São diferentes" se forem diferentes.
+        public string ExercícioVinteTres(int primeiro, int segundo) 
+        {
+
+            
+
+            if (primeiro == segundo)
+            {
+
+                return "São Iguais";
+
+
+            }
+            else
+            {
+
+                return "São Diferentes";
+
+            }// Fim do If
+
+        }//Fim do For
+
+        //Exercício 24: Faça um programa que peça a idade do usuário e
+        //Imprima se ele é maior de idade ou menor de idade.
+        public string ExercícioVinteQuatro(int maior) 
+        {
+
+            if (maior > 18)
+            {
+
+                return "Maior de Idade";
+
+
+            }
+            else
+            {
+
+                return "Menor de Idade";
+
+            }// Fim do If
+
+
+        }// Fim do Vinte Quatro
+
+        //Exercício 25: Faça um programa que peça dois números e imprima o menor deles.
+        public int ExercícioVinteCinco(int nus1, int nus2) 
+        {
+
+            if (nus1 < nus2)
+            {
+
+                return nus1;
+
+
+            }
+            else
+            {
+
+                return nus2;
+
+            }// Fim do If
+
+
+
+        }// Fim do Vinte e Cinco
 
 
 
