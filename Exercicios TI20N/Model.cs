@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Data;
 using System.IO;
 using System.Linq;
 using System.Runtime.Remoting.Messaging;
@@ -521,6 +522,8 @@ namespace Exercicios_TI20N
         //Exercício 25: Faça um programa que peça dois números e imprima o menor deles.
         public int ExercícioVinteCinco(int nus1, int nus2) 
         {
+            
+
 
             if (nus1 < nus2)
             {
@@ -536,9 +539,63 @@ namespace Exercicios_TI20N
 
             }// Fim do If
 
-
-
         }// Fim do Vinte e Cinco
+
+        //Exercício 26: Faça um programa que peça a altura e o peso de uma pessoa e
+        //calcula o IMC(indíce de massa corporal). A fórmula é IMC = peso / altura^2.
+        public double ExercícioVinteSeis(double altura, double peso) 
+        {
+
+            return peso / Math.Pow(altura , 2);
+
+        }// Fim do Vinte Seis
+
+        //Exercício 27: Faça um algoritmo que leia a idade de uma pessoa expressa em anos
+        //meses e dias e escreva a idade dessa pessoa expressa em dias
+        //Considerar ano com 365 dias e mês com 30 dias.
+        public int ExercícioVinteSete(int ano, int ide, int mes) 
+        {
+
+            return (ano * 365) + (mes * 30) + ide;
+
+        
+        }// Fim do Vinte Sete
+
+        //Exercício 28:  Ler o salário fixo e o valor das vendas efetuadas pelo
+        //vendedor de uma empresa.Sabendo-se que ele recebe uma
+        //comissão de 3% sobre o total das vendas até R$ 1.500,00
+        //mais 5% sobre o que ultrapassar este valor, calcular e
+        //escrever o seu salário total
+        public double ExercícioVinteOito( double salario, double vendas) 
+        {
+
+            double comissao = 0;
+            
+
+            if (vendas <= 1500)
+            {
+
+                return comissao = (vendas * 0.03) + vendas;
+
+            }
+            else if (salario > 1500)
+            {
+
+                return comissao = salario + (1500 * 0.03) + (1500 - vendas); 
+            
+            
+            
+            }
+
+
+                return comissao = vendas + (salario + vendas); 
+        
+        
+        
+        }
+
+
+
 
 
 
