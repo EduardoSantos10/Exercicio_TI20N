@@ -52,7 +52,13 @@ namespace Exercicios_TI20N
                                     "25. Exercício 25\n"+
                                     "26. Exercício 26\n"+
                                     "27. Exercício 27\n"+
-                                    "28. Exercício 28\n");
+                                    "28. Exercício 28\n"+
+                                    "29. Exercício 29\n"+
+                                    "30. Exercício 30\n"+
+                                    "31. Exercício 31\n"+
+                                    "32. Exercício 32\n"+
+                                    "33. Exercício 33\n"+
+                                    "34. Exercício 34\n");
                                            
                                                  
                                         
@@ -66,6 +72,7 @@ namespace Exercicios_TI20N
             {
                 Menu(); //Mostrando as Opções
                 opcao = Convert.ToInt32(Console.ReadLine());
+
 
                 switch (opcao)
                 {
@@ -257,14 +264,40 @@ namespace Exercicios_TI20N
                    
                         Console.WriteLine(modelo.ExercícioVinteOito(salario, vendas));
                         break;
-                        case 29:
-                            Console.WriteLine("Digite o valor: ");
-                            int valor = Convert.ToDouble(Console.ReadLine());
 
-                            Console.WriteLine("Digite o valor: ");
-                            int con = Convert.ToDouble(Console.ReadLine());
+                    case 29:
 
-                        Console.WriteLine(modelo.ExercícioVinteNove(valor, con));
+                        Console.WriteLine(modelo.ExercícioVinteNove());
+                        break;
+
+                    case 30:
+
+                        Console.WriteLine(modelo.ExercícioTrinta());
+                        break;
+
+                    case 31:
+
+                        Console.WriteLine(modelo.ExercícioTrintaUm());
+                        break;
+                    case 32:
+                        Console.WriteLine("Informe o Tempo: ");
+                        int tempo = Convert.ToInt32(Console.ReadLine());
+
+                        Console.WriteLine("Informe a Velocidade: ");
+                        int velocidade = Convert.ToInt32(Console.ReadLine());
+
+
+                        Console.WriteLine(modelo.ExercícioVinteOito(tempo, velocidade));
+                        break;
+                    case 33:
+                        Console.WriteLine("Digite a base do retangulo: ");
+                        int valorBaseRetangulo = Convert.ToInt32(Console.ReadLine());
+
+                        Console.WriteLine("Digite a altura do retangulo: ");
+                        int valorAlturaRetangulo = Convert.ToInt32(Console.ReadLine());
+
+                        Console.WriteLine(modelo.ExercícioTrintaTres(valorAlturaRetangulo, valorBaseRetangulo));
+
                         break;
                     default:
                         Console.WriteLine("Código digitado não é válido!");

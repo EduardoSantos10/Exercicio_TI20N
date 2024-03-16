@@ -4,7 +4,10 @@ using System.ComponentModel;
 using System.Data;
 using System.IO;
 using System.Linq;
+using System.Reflection;
+using System.Runtime.InteropServices;
 using System.Runtime.Remoting.Messaging;
+using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -585,14 +588,150 @@ namespace Exercicios_TI20N
             
             
             
-            }
+            }// Fim do If
 
 
                 return comissao = vendas + (salario + vendas); 
         
+        }//Fim do Vinte e oito
+
+
+        //Exercício 29: Ler 10 valores e escrever quantos desses valores lidos são NEGATIVOS.
+        public int ExercícioVinteNove() 
+        {
+
+            int contNegativos = 0;
+            int num = 0;
+            
+
+            for ( int i = 0; i < 10; i++) 
+            {
+
+                Console.WriteLine($"Digite o valor: ");
+                num = Convert.ToInt32(Console.ReadLine());
+
+                if (num < 0) 
+                { 
+                    contNegativos++;
+                }
+            }
+
+
+            return contNegativos;
+        
+        }//Fim do Vinte Nove
+
+        //Exercício 30: Escreva um algoritmo para ler 10 números. Todos os
+        //números lidos com valor inferior a 40 devem ser somados.
+        //Escreva o valor final da soma efetuada
+        public int ExercícioTrinta() 
+        { 
+                int soma = 0;
+                int num = 0;
+
+            for (int i = 0; i < 10; i++)
+            { 
+
+                Console.WriteLine($"Digite um Valor: ");
+                num = Convert.ToInt32(Console.ReadLine());
+
+                if (num < 40) 
+                {       
+                      soma+= num;
+                }// Fim do If
+            
+            }//Fim do For
+        
+            return soma;
+        
+        }// Fim do Trinta
+
+        //Exercício 31: Escreva um algoritmo que permita a leitura das notas de
+        //uma turma de 20 alunos.Calcular a média da turma.Escrever a média da turma.
+        public int ExercícioTrintaUm() 
+        {
+
+            int media = 0;
+            int soma = 0;
+            int nota = 0;
+
+            for (int i = 0; i <= 20; i++) 
+            {
+
+                Console.WriteLine($"Digite um Valor: ");
+                nota = Convert.ToInt32(Console.ReadLine());
+
+                soma += nota;
+            
+           
+            }//Fim do For
+
+                media = soma / 20;
+
+
+                return media;
+
+        }//Fim do Trinta e Um
+
+        //Exercício 32: Faça um algoritmo que calcule a quantidade de litros de
+        //combustível gasta em uma viagem, utilizando um automóvel
+        //que faz 12Km por litro.Para obter o cálculo, o usuário deve
+        //fornecer o tempo gasto na viagem e a velocidade média
+        //durante ela.Desta forma, será possível obter a distância
+        //percorrida com a fórmula DISTANCIA = TEMPO * VELOCIDADE.
+        //Tendo o valor da distância, basta calcular a quantidade de
+        //litros de combustível utilizada na viagem com a fórmula:
+        //LITROS_USADOS = DISTANCIA / 12.O programa deve
+        //apresentar os valores da velocidade média, tempo gasto na
+        //viagem, a distância percorrida e a quantidade de litros
+        //utilizada na viagem
+        public string ExercícioTrintaDois(int tempo, int velocidade) 
+        {
+
+            int litrosUsados = 0;
+            int distancia = 0;
+
+
+            distancia = tempo * velocidade;
+
+            litrosUsados = distancia / 12;
+
+
+            return "O tempo gasto na viagem foi: " + tempo + "a distancia percorrida foi:" + distancia + "A quantidade de litros ultilizada foi: " + litrosUsados;
+
+        }//Fim do Trinta e Dois
+
+        //Exercício 33: Escreva um algoritmo para ler as dimensões de um retângulo (base e
+        //altura), calcular e escrever a área do retângulo
+        public int ExercícioTrintaTres(int valorBaseRetangulo, int valorAlturaRetangulo) 
+        {
+
+            int area = 0;
+        
+            area = valorAlturaRetangulo * valorBaseRetangulo;
+
+
+            return area;
+        
+        }//Fim do Trinta e Tres
+
+        //Exercício 34: Escreva um algoritmo para ler o número total de eleitores de um
+        //município, o número de votos brancos, nulos e válidos.Calcular e
+        //escrever o percentual que cada um representa em relação ao total de eleitores
+        public int ExercícioTrintaQuatro() 
+        { 
+        
+            
+        
+        
+        
+        
+        
+        
         
         
         }
+
 
 
 
