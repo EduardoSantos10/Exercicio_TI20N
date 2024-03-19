@@ -58,7 +58,8 @@ namespace Exercicios_TI20N
                                     "31. Exercício 31\n"+
                                     "32. Exercício 32\n"+
                                     "33. Exercício 33\n"+
-                                    "34. Exercício 34\n");
+                                    "34. Exercício 34\n"+
+                                    "35. Exercício 35\n");
                                            
                                                  
                                         
@@ -244,7 +245,7 @@ namespace Exercicios_TI20N
                         break;
                     case 27:
                         Console.WriteLine("Informe a Idade: ");
-                        int ide = Convert.ToInt32(Console.ReadLine());
+                        int dia = Convert.ToInt32(Console.ReadLine());
 
                         Console.WriteLine("Informe o mes: ");
                         int mes = Convert.ToInt32(Console.ReadLine());
@@ -252,7 +253,7 @@ namespace Exercicios_TI20N
                         Console.WriteLine("Informe o dia: ");
                         int ano = Convert.ToInt32(Console.ReadLine());
 
-                        Console.WriteLine(modelo.ExercícioVinteSete(ide, ano, mes));
+                        Console.WriteLine(modelo.ExercícioVinteSete(dia, ano, mes));
                         break;
                     case 28:
                         Console.WriteLine("Informe o salário: ");
@@ -299,6 +300,32 @@ namespace Exercicios_TI20N
                         Console.WriteLine(modelo.ExercícioTrintaTres(valorAlturaRetangulo, valorBaseRetangulo));
 
                         break;
+                    case 34:
+                        Console.WriteLine("Informe os Votos Brancos: ");
+                        int votosBrancos = Convert.ToInt32(Console.ReadLine());
+
+                        Console.WriteLine("Informe os Votos Nulos: ");
+                        int votosNulos = Convert.ToInt32(Console.ReadLine());
+
+                        Console.WriteLine("Informe os Votos Válidos:");
+                        int votosValidos = Convert.ToInt32(Console.ReadLine());
+
+                        Console.WriteLine("Informe o Total de Eleitores: ");
+                        int totalEleitores = Convert.ToInt32(Console.ReadLine());
+
+                        modelo.ExercícioTrintaQuatro(votosNulos, votosValidos, votosBrancos, totalEleitores);
+                        break;
+
+                    case 35:
+                        Console.WriteLine("Digite o custo de fábrica de um carro:");
+                        double custoFabrica = Convert.ToDouble(Console.ReadLine());
+
+                        Console.WriteLine("O custo final ao consumidor é: ");
+                        double custoConsumidor = Convert.ToDouble(Console.ReadLine());
+
+                        modelo.ExercícioTrintaCinco();
+                        break;
+
                     default:
                         Console.WriteLine("Código digitado não é válido!");
                         break;       

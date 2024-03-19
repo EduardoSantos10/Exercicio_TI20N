@@ -556,10 +556,10 @@ namespace Exercicios_TI20N
         //Exercício 27: Faça um algoritmo que leia a idade de uma pessoa expressa em anos
         //meses e dias e escreva a idade dessa pessoa expressa em dias
         //Considerar ano com 365 dias e mês com 30 dias.
-        public int ExercícioVinteSete(int ano, int ide, int mes) 
+        public int ExercícioVinteSete(int ano, int dia, int mes) 
         {
 
-            return (ano * 365) + (mes * 30) + ide;
+            return ano * 365 + mes * 30 + dia;
 
         
         }// Fim do Vinte Sete
@@ -578,20 +578,20 @@ namespace Exercicios_TI20N
             if (vendas <= 1500)
             {
 
-                return comissao = (vendas * 0.03) + vendas;
+                return comissao = (vendas * 0.03) + salario;
 
             }
             else if (salario > 1500)
             {
 
-                return comissao = salario + (1500 * 0.03) + (1500 - vendas); 
+                return comissao = (1500 * 0.03) + ((1500 - vendas) * 0.05) + salario; 
             
             
             
             }// Fim do If
 
 
-                return comissao = vendas + (salario + vendas); 
+                return comissao; 
         
         }//Fim do Vinte e oito
 
@@ -718,29 +718,53 @@ namespace Exercicios_TI20N
         //Exercício 34: Escreva um algoritmo para ler o número total de eleitores de um
         //município, o número de votos brancos, nulos e válidos.Calcular e
         //escrever o percentual que cada um representa em relação ao total de eleitores
-        public int ExercícioTrintaQuatro() 
-        { 
-        
-            
-        
-        
-        
-        
-        
-        
-        
-        
-        }
+        public void ExercícioTrintaQuatro(int votosNulos, int votosBrancos, int votosValidos, int totalEleitores) 
+        {
+
+            double percentualBrancos = (double)votosBrancos / totalEleitores * 100;
+            double percentualNulos = (double)votosNulos / totalEleitores * 100;
+            double percentualValidos = (double)votosValidos / totalEleitores * 100;
 
 
+
+            Console.WriteLine("\nResultados:");
+            Console.WriteLine($"Percentual de votos brancos: {percentualBrancos:F2}%");
+            Console.WriteLine($"Percentual de votos nulos: {percentualNulos:F2}%");
+            Console.WriteLine($"Percentual de votos válidos: {percentualValidos:F2}%");
+
+        }// Fim do Trinta e Quatro
+
+        //Exercício 35: O custo de um carro novo ao consumidor é a soma do custo de fábrica
+        //com a porcentagem do distribuidor e dos impostos(aplicados ao custo
+        //de fábrica). Supondo que o percentual do distribuidor seja de 28% e os
+        //impostos de 45%, escrever um algoritmo para ler o custo de fábrica de
+        //um carro, calcular e escrever o custo final ao consumidor.
+        public void ExercícioTrintaCinco() 
+        {
+
+            Console.WriteLine("Digite o custo de fábrica de um carro: ");
+            double custoFabrica = 0;
+
+            double percentualDistribuidor = 0.28;
+            double percentualImpostos = 0.45;
+
+
+            double custoDistribuidor = custoFabrica + percentualDistribuidor;
+            double custoImpostos = custoFabrica * percentualImpostos;
+            double custoConsumidor = custoFabrica + custoDistribuidor + custoImpostos;
+
+            Console.WriteLine("O custo final ao consumidor é: " + custoConsumidor);
+
+        }//Fim do Trinta e Cinco
+
+        //Exercício 36: Faça um programa que imprima os números de 1 a 100,
+        //mas substitua os múltiplos de 3 por "Fizz" e os múltiplos de 5 por "Buzz".
+        //Para números que são múltiplos de ambos (3 e 5), imprima "FizzBuzz"
 
 
 
 
 
     }//Fim da Classe
-
-
-
 
 }//Fim do Projeto
