@@ -762,6 +762,165 @@ namespace Exercicios_TI20N
         //Para números que são múltiplos de ambos (3 e 5), imprima "FizzBuzz"
 
 
+        //Exercício 51:  Faça um programa que crie um vetor de números inteiros e
+        //imprima todos os elementos desse vetor.
+        public void ExercícioCinquentaUm()
+        {
+            int[] vet = new int[4];//Declaração de Vetor
+            //Preenchendo Vetor
+            for (int i = 0; i < 4; i++)
+            {
+
+                Console.WriteLine(i + 1 + "ª Número: ");
+                vet[i] = Convert.ToInt32(Console.ReadLine());
+
+            }
+
+            //Mostrar o Vetor
+            for(int i=0; i < 4; i++)
+            {
+                Console.WriteLine(i+1 + "ª Posição: " + vet[i]);
+            }
+        
+        
+        }
+
+        //Exercício 52:  Faça um programa que crie um vetor de números inteiros e
+        //calcule a média dos valores presentes no vetor.
+        public int ExercícioCinquentaDois() 
+        { 
+        
+            int[] vet = new int[4];
+            int soma = 0;
+            int i = 0;
+            //Preenchimento
+            for(i=0; i < 4; i++) 
+            {
+
+                Console.WriteLine(i + 1 + "ª Posição: ");
+                vet[i] = Convert.ToInt32(Console.ReadLine());
+                soma += vet[i]; //Somando
+            
+            }
+            return soma / i;
+        
+        
+
+        }// Fim do Cinquenta e Dois
+
+        //Exercício 53: Faça um programa que crie um vetor de números inteiros e
+        //imprima apenas os valores pares desse vetor.
+        public void ExercícioCinquentaTres()
+        {
+
+            int[] vet = new int [4];
+
+            for( int i=0; i < 4; i++) 
+            {
+
+                Console.WriteLine(i + 1 + "ª Posição: ");
+                vet[i] = Convert.ToInt32(Console.ReadLine());
+
+                if (vet[i] % 2 == 0) 
+                {
+
+                    Console.WriteLine(vet[i]);
+                
+                
+                }// Fim do IF
+
+            }//Fim do For
+
+        
+        }// Fim do Cinquenta e Três
+
+        //Exercício 54: Faça um programa que crie um vetor de números inteiros e
+        //imprima o maior e o menor valor presente no vetor.
+        public void ExercícioCinquentaQuatro() 
+        { 
+        
+            int[] vet = new int[5];
+            int maior = vet[0];
+            int menor = vet[0];
+
+
+            for (int i = 0; i < 5; i++)
+            {
+
+
+                Console.WriteLine(i + 1 + "ª Posição: ");
+                vet[i] = Convert.ToInt32(Console.ReadLine());
+
+            }
+
+            for (int i = 0; i < 5; ++i)
+            {
+
+                if (vet[i] < menor)
+                {
+
+                    maior = vet[i];
+
+                }
+                else
+                {
+
+
+                    menor = vet[i];
+
+
+                }// Fim do IF
+
+            }// Fim do For
+
+
+            Console.WriteLine("Maior valor: " + maior);
+            Console.WriteLine("Menor valor: " + menor);
+     
+        }// Fim do Cinqueta e Quatro
+
+        //Exercício 55: Faça um programa que crie um vetor de números inteiros e
+        //imprima os elementos na ordem inversa.
+        public void ExercícioCinquentaCinco() 
+        {
+
+            int[] vet = new int[10];
+
+            for (int i = 0; i < 10; i++)
+            {
+                Console.WriteLine(i + 1 + "Informe um número: ");
+                vet[i] = Convert.ToInt32(Console.ReadLine());
+            }
+
+            int aux = 0;
+            int r = 9;
+
+            for( int i = 0; i < 4; i++)
+            {     
+                aux = vet[r];
+                vet[r] = vet[i];
+                vet[i] = aux;
+                r = r - 1;
+            }
+            for( int i = 0; i < 10; i++) 
+            { 
+            
+                Console.WriteLine((i+1) + "ª Posição:" + vet[i]);
+            
+            }//Fim do Exercício 55
+
+
+
+
+
+
+
+
+        }
+
+
+
+
 
 
 

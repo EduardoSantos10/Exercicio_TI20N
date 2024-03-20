@@ -59,7 +59,12 @@ namespace Exercicios_TI20N
                                     "32. Exercício 32\n"+
                                     "33. Exercício 33\n"+
                                     "34. Exercício 34\n"+
-                                    "35. Exercício 35\n");
+                                    "35. Exercício 35\n"+
+                                    "51. Exercício 51\n"+
+                                    "52. Exercício 52\n"+
+                                    "53. Exercício 53\n"+
+                                    "54. Exercício 54\n"+
+                                    "55. Exercício 55\n");
                                            
                                                  
                                         
@@ -324,6 +329,22 @@ namespace Exercicios_TI20N
                         double custoConsumidor = Convert.ToDouble(Console.ReadLine());
 
                         modelo.ExercícioTrintaCinco();
+                        break;
+              
+                    case 51:
+                        modelo.ExercícioCinquentaUm();
+                        break;
+                    case 52:
+                        Console.WriteLine("A média do vetor é: " + modelo.ExercícioCinquentaDois());
+                        break;
+                    case 53:
+                        modelo.ExercícioCinquentaTres();
+                        break;
+                    case 54:
+                        modelo.ExercícioCinquentaQuatro();
+                        break;
+                    case 55:
+                        modelo.ExercícioCinquentaCinco();
                         break;
 
                     default:
