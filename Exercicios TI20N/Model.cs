@@ -8,6 +8,7 @@ using System.Reflection;
 using System.Runtime.InteropServices;
 using System.Runtime.Remoting.Messaging;
 using System.Runtime.Serialization;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -907,16 +908,117 @@ namespace Exercicios_TI20N
             
                 Console.WriteLine((i+1) + "ª Posição:" + vet[i]);
             
-            }//Fim do Exercício 55
+            }//Fim do For 
 
 
+        }// Fim do 55
 
+        //Exercício 56: Faça um programa que crie um vetor de números inteiros e
+        //calcule a soma de todos os valores presentes no vetor.
+        public int ExercícioCinquentaSeis() 
+        { 
+        
+        
+            int[] vet = new int[5];
+            int soma = 0;
+            int i = 0;
 
+            for( i = 0; i < 5; i++) 
+            {
+                Console.WriteLine(i + 1 + "Informe um número: ");
+                vet[i] = Convert.ToInt32(Console.ReadLine());
+                soma += vet[i];
+            }
+            return soma;
+     
+        }// Fim do Cinquenta e Seis
 
+        //Exercício 57: Faça um programa que crie dois vetores de números inteiros com o mesmo tamanho e
+        //realize a soma elemento por elemento desses vetores, armazenando o resultado em um terceiro vetor.
+        public void ExercícioCinquentaSete() 
+        {
+        
+            int[] vet1 = new int[5];
+            int[] vet2 = new int[5];
+            int[] vet3 = new int[5];
+            int i = 0;
 
+            for(i = 0; i < 5; i++) 
+            {
+                Console.WriteLine(i + 1 + "º Número: ");
+                vet1[i] = Convert.ToInt32(Console.ReadLine());
+               
+            }
+            for(i = 0; i < 5; i++) 
+            {
 
+                Console.WriteLine(i + 1 + "º Número: ");
+                vet2[i] = Convert.ToInt32(Console.ReadLine());
+            
+            }
+            for(i = 0; i < 5; i++)
+            {
+                vet3[i] = vet1[i] + vet2[i];
+                Console.WriteLine(vet3[i]);
+            
+            }// Fim do For
+        
+        }// Fim do Cinquenta Sete
 
+        //Exercício 58: Faça um programa que crie um vetor de números inteiros e
+        //verifique se ele está em ordem crescente.
+        public string ExercícioCinquentaOito() 
+        {
+
+            int[] vet = new int[5];
+            bool crescente = false;
+            for (int i = 0; i < 5; i++)
+            {
+                Console.WriteLine((i + 1) + "º número: ");
+                vet[i] = Convert.ToInt32(Console.ReadLine());
+            }//fim do for
+            int j = 1;
+            for (int i = 0; i < 5; i++)
+            {
+                if (vet[i] < vet[j])
+                {
+                    j = 1;
+                    crescente = true;
+                }
+                else
+                {
+                    crescente = false;
+                }
+            }//fim do for
+            if (crescente == true)
+            {
+                return "O vetor esta em ordem crescente! ";
+
+            }//fim do if
+            else
+            {
+                return "O vetor não está em ordem crescente! ";
+
+            }//fim else
+
+        }// Fim do Cinquenta e Oito
+
+        //Exercício 59: Faça um programa que crie um vetor de números inteiros e remova todos os
+        //elementos repetidos desse vetor, deixando apenas uma ocorrência de cada valor.
+        public void ExercícioCinquentaNove()
+        {
+            int[] vet = new int[10];
+
+        
+        
+            
+        
+        
+        
+        
         }
+
+
 
 
 

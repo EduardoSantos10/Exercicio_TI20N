@@ -64,7 +64,10 @@ namespace Exercicios_TI20N
                                     "52. Exercício 52\n"+
                                     "53. Exercício 53\n"+
                                     "54. Exercício 54\n"+
-                                    "55. Exercício 55\n");
+                                    "55. Exercício 55\n"+
+                                    "56. Exercício 56\n"+
+                                    "57. Exercício 57\n"+
+                                    "58. Exercício 58\n");
                                            
                                                  
                                         
@@ -345,6 +348,15 @@ namespace Exercicios_TI20N
                         break;
                     case 55:
                         modelo.ExercícioCinquentaCinco();
+                        break;
+                    case 56:
+                        Console.WriteLine("A soma do vetor é: " + modelo.ExercícioCinquentaSeis());
+                        break;
+                    case 57:
+                        modelo.ExercícioCinquentaSete();
+                        break;
+                    case 58:
+                        Console.WriteLine(modelo.ExercícioCinquentaOito());
                         break;
 
                     default:
