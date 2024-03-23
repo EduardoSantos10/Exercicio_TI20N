@@ -1007,14 +1007,130 @@ namespace Exercicios_TI20N
         //elementos repetidos desse vetor, deixando apenas uma ocorrência de cada valor.
         public void ExercícioCinquentaNove()
         {
-            int[] vet = new int[10];
 
-        
-        
+            // Criando um vetor de números inteiros
+            int[] vetor = { 1, 2, 3, 4, 5, 2, 3, 6, 7, 8, 9, 1, 4, 10 };
+
+            // Removendo elementos repetidos
+            int[] vetorSemRepetidos = RemoverRepetidos(vetor);
+
+            // Exibindo o vetor sem elementos repetidos
+            Console.WriteLine("Vetor sem elementos repetidos:");
+            foreach (int num in vetorSemRepetidos)
+            {
+                Console.Write(num + " ");
+            }
+        }
+
+        static int[] RemoverRepetidos(int[] vetor)
+        {
+            // Criando um HashSet para rastrear os valores únicos
+            HashSet<int> valoresUnicos = new HashSet<int>();
+
+            // Lista para armazenar os valores únicos na ordem em que aparecem no vetor original
+            List<int> listaValoresUnicos = new List<int>();
+
+            // Percorrendo o vetor original
+            foreach (int num in vetor)
+            {
+                // Adicionando valores únicos ao HashSet
+                if (!valoresUnicos.Contains(num))
+                {
+                    valoresUnicos.Add(num);
+                    listaValoresUnicos.Add(num);
+                }
+            }
+
+            // Convertendo a lista para um vetor
+            int[] vetorSemRepetidos = listaValoresUnicos.ToArray();
+
+            return vetorSemRepetidos;
+
+
+        }// Fim do Cinquenta e Nove
+
+        //Exercício 60: Faça um programa que crie um vetor de strings e
+        //imprima todos os elementos desse vetor em ordem alfabética.
+        public void ExercícioSessenta()
+        {
+            string[] vet = {"Munique", "Tokyo", "Los Angeles", "Foz do Iguaçu", "Barcelona" };
+
+            
+            Array.Sort(vet);
+            
+
+            Console.WriteLine("Elementos em Ordem Alfabetica: ");
+            
+            for( int i = 0; i < vet.Length; i++)
+            { 
+                Console.WriteLine(vet[i]);
+           
+            }
+
+            int tamanho = vet.Length;
+            bool trocou;
+
+            do
+            {
+
+                trocou = false;
+                tamanho= 0;
+
+                for ( int i = 0; i < tamanho; i++)
+                {
+
+                    if (String.Compare(vet[i], vet[i + 1]) > 0)
+                    {
+
+                        string temp = vet[i];
+                        vet[i] = vet[i + 1];
+                        vet[i + 1] = temp;
+                        trocou = true;
+
+                    }
+
+
+                }
+
+            } while (trocou);
             
         
-        
-        
+        }// Fim do Sessenta
+
+        //Exercício 61: Faça um programa que crie um vetor de números inteiros e
+        //verifique quantas vezes um determinado valor aparece no vetor.
+        public string ExercícioSessentaUm() 
+        {
+
+            int[] vet = new int[5];
+            int valor = 0;
+            int quantidade = 0;
+            int contador = 0;
+
+            for( int i = 0; i < 5;i++ )
+            { 
+                Console.WriteLine((i+1) + "Informe o º Número: ");
+                vet[i] = Convert.ToInt32(Console.ReadLine());          
+            }
+
+            Console.WriteLine("Digite um número: ");
+            Console.ReadLine();
+
+
+
+            for (int i = 0; i < 5; i++)
+            {
+                if (vet[i] == valor ) 
+                { 
+                
+
+                    contador++;
+                
+                
+                }
+            }
+
+            return "O numero digitado: ";
         
         }
 

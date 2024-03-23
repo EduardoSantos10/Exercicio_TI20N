@@ -67,7 +67,10 @@ namespace Exercicios_TI20N
                                     "55. Exercício 55\n"+
                                     "56. Exercício 56\n"+
                                     "57. Exercício 57\n"+
-                                    "58. Exercício 58\n");
+                                    "58. Exercício 58\n"+
+                                    "59. Exercício 59\n"+
+                                    "60. Exercício 60\n"+
+                                    "61. Exercício 61\n");
                                            
                                                  
                                         
@@ -357,6 +360,15 @@ namespace Exercicios_TI20N
                         break;
                     case 58:
                         Console.WriteLine(modelo.ExercícioCinquentaOito());
+                        break;
+                    case 59:
+                        modelo.ExercícioCinquentaNove();
+                        break;
+                    case 60:
+                        modelo.ExercícioSessenta();
+                        break;
+                    case 61:
+                        Console.WriteLine(modelo.ExercícioSessentaUm());
                         break;
 
                     default:
