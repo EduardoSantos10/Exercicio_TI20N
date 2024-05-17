@@ -1099,40 +1099,38 @@ namespace Exercicios_TI20N
 
         //Exercício 61: Faça um programa que crie um vetor de números inteiros e
         //verifique quantas vezes um determinado valor aparece no vetor.
-        public string ExercícioSessentaUm() 
+        public int ExercícioSessentaUm() 
         {
 
-            int[] vet = new int[5];
-            int valor = 0;
-            int quantidade = 0;
+            int[] vet = new int[10];
+            int valor = 2;
             int contador = 0;
+            int i = 0;
 
-            for( int i = 0; i < 5;i++ )
-            { 
-                Console.WriteLine((i+1) + "Informe o º Número: ");
-                vet[i] = Convert.ToInt32(Console.ReadLine());          
+            for ( i = 0; i < vet.Length; i++)
+            {
+
+                Console.WriteLine((i + 1) + "º número: ");
+                vet[i] = Convert.ToInt32(Console.ReadLine());
+
             }
 
-            Console.WriteLine("Digite um número: ");
-            Console.ReadLine();
-
-
-
-            for (int i = 0; i < 5; i++)
-            {
-                if (vet[i] == valor ) 
+            for()    
+            
+            
+            
+            if (vet[i] == valor) 
                 { 
                 
+                    ++contador;
+                }       
+            
 
-                    contador++;
-                
-                
-                }
-            }
-
-            return "O numero digitado: ";
+            
+            Console.WriteLine("$\"O valor {valorProcurado} aparece {contador} vezes no vetor.");
+            
         
-        }
+        }//Fim do Sessenta e Um
 
 
 
